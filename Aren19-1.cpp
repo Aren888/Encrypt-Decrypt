@@ -6,13 +6,13 @@
 using namespace std;
 
 int main(){
-    char input[4];
-    char output[4];
+    char input[5];
+    char output[5];
     
-    strcpy_s(input, 4, "aaa");
-    unsigned int len = 3;
+    strcpy_s(input, 5, "Aren");
+    unsigned int len = 4;
     Shablon sh;
-    sh.encrypt(input, 3, output, len);
+    sh.encrypt(input, 4, output, len);
     *(output + len) = 0;
     cout << output;
 }
